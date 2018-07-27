@@ -1,0 +1,15 @@
+
+-> DATA ACQUISITION
+1. Use interface to activate radar and begin scanning
+2. get data from radar
+3. get data from motion tracker
+
+-> MOTION TRACKING
+1. Integrate a block of pulses (10 or so)
+2. Extract blobs and find their midpoints
+3. Integrate another block of pulses
+4. At the new blob centers, superimpose the blobs of the previous pulse block
+5. Remove pixel intensities that fall out of the superimposed area
+6. Repeat, integrating pulses on the modified image
+
+*at each repetition, update a window with the modified image
